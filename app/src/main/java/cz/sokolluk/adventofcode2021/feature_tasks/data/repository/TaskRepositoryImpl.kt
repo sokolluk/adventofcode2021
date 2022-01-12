@@ -17,6 +17,7 @@ class TaskRepositoryImpl(
             Task(2,"Dive!"),
             Task(3,"Binary Diagnostic"),
             Task(4,"Giant Squid"),
+            Task(5,"Hydrothermal Venture"),
         )))
     }
 

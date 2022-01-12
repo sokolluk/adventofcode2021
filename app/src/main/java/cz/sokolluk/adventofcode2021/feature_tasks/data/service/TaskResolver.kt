@@ -1,9 +1,6 @@
 package cz.sokolluk.adventofcode2021.feature_tasks.data.service
 
-import cz.sokolluk.adventofcode2021.feature_tasks.data.service.tasks.Task1
-import cz.sokolluk.adventofcode2021.feature_tasks.data.service.tasks.Task2
-import cz.sokolluk.adventofcode2021.feature_tasks.data.service.tasks.Task3
-import cz.sokolluk.adventofcode2021.feature_tasks.data.service.tasks.Task4
+import cz.sokolluk.adventofcode2021.feature_tasks.data.service.tasks.*
 
 object TaskResolver {
 
@@ -24,6 +21,10 @@ object TaskResolver {
             4 -> Task.Companion.TaskResult(
                 Task4().computeFirstPart(input),
                 Task4().computeSecondPart(input)
+            )
+            5 -> Task.Companion.TaskResult(
+                Task5().computeFirstPart(input),
+                Task5().computeSecondPart(input)
             )
             else -> Task.Companion.TaskResult()
         }

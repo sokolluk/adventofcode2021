@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
+import cz.sokolluk.adventofcode2021.feature_tasks.presentation.common.Header
 import cz.sokolluk.adventofcode2021.ui.theme.GreenLight
 
 @Composable
@@ -25,12 +26,11 @@ fun TaskDetailScreen(
             modifier = Modifier.fillMaxSize()
         ) {
         Column(modifier = Modifier.fillMaxSize()) {
-            Text(
+            Header(
                 text = "<- Back",
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .clickable { navController.popBackStack() }
-                    .padding(16.dp)
+                onClicked =  {
+                    navController.popBackStack()
+                }
             )
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
